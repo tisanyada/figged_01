@@ -9,7 +9,7 @@ const Navigation = () => {
     const [activeLink, setActiveLink] = useState(null)
 
     return (
-        <Wrapper>
+        <Wrapper bgColor="orange02">
             <NavigationContainer>
                 <Logo>
                     <span>Digi</span>ency
@@ -25,7 +25,8 @@ const Navigation = () => {
 
                     <Button
                         padding="10px 22px"
-                        borderSize="1px"
+                        borderSize="2px"
+                        borderColor="black01"
                         radius="5px"
                         whileHover={{ scale: [1, .9] }}
                         transition={{ duration: 0.5, type: 'spring' }}
