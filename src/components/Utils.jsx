@@ -35,9 +35,17 @@ export const Button = styled(motion.button)`
     outline: none;
 `
 
+export const HeaderContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+`
+
 export const SectionHeader1 = styled.h1`
     font-size: var(--font-desktop-02);
     color: var(--black01);
+    font-weight: ${(props) => props.weight ? props.weight : 300};
 `
 
 export const SectionHeader2 = styled.h4`

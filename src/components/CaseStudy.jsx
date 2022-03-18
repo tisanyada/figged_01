@@ -3,13 +3,6 @@ import styled from "styled-components";
 
 export const CaseStudyContainer = styled.div`
     padding: 4em 0;
-
-    div.header {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
 `
 
 export const CaseStudyButtons = styled.div`

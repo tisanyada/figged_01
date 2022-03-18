@@ -1,5 +1,5 @@
 import { ServiceItem, ServiceItemBody, ServiceItemHeader, ServiceItems, ServicesContainer } from "@/components/Services"
-import { SectionHeader1, SectionHeader2, Wrapper } from "@/components/Utils"
+import { HeaderContainer, SectionHeader1, SectionHeader2, Wrapper } from "@/components/Utils"
 import images from "@/constants/images"
 
 
@@ -7,10 +7,10 @@ const Services = () => {
 	return (
 		<Wrapper>
 			<ServicesContainer>
-				<div className="header">
+				<HeaderContainer>
 					<SectionHeader2>Our Services</SectionHeader2>
-					<SectionHeader1>What We Do</SectionHeader1>
-				</div>
+					<SectionHeader1 weight="600">What We Do</SectionHeader1>
+				</HeaderContainer>
 
 				<ServiceItems>
 					<ServiceItem>

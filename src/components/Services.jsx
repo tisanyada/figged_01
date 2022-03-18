@@ -4,13 +4,6 @@ import styled from "styled-components";
 
 export const ServicesContainer = styled.div`
     padding: 4em 0;
-
-    div.header {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
 `
 export const ServiceItems = styled.div`
     display: grid;

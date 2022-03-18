@@ -2,7 +2,7 @@ import { useState } from "react"
 import { RiShareBoxLine } from 'react-icons/ri'
 
 import { CaseStudyContainer, CaseStudyButtons, CaseStudyItems, CaseStudyItem } from "@/components/CaseStudy"
-import { Button, SectionHeader1, SectionHeader2, Wrapper } from "@/components/Utils"
+import { Button, HeaderContainer, SectionHeader1, SectionHeader2, Wrapper } from "@/components/Utils"
 import images from "@/constants/images"
 
 
@@ -12,10 +12,10 @@ const CaseStudy = () => {
 	return (
 		<Wrapper>
 			<CaseStudyContainer>
-				<div className="header">
+				<HeaderContainer>
 					<SectionHeader2>Our Case Study</SectionHeader2>
-					<SectionHeader1>Our Recent Project</SectionHeader1>
-				</div>
+					<SectionHeader1 weight="600">Our Recent Project</SectionHeader1>
+				</HeaderContainer>
 
 				<CaseStudyButtons>
 					{['All', 'UX Design', 'Web Design', 'App Development', 'Game Design', 'Graphic Design'].map((link, index) => (
