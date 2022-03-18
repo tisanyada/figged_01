@@ -1,8 +1,32 @@
+import { AiFillCheckCircle } from 'react-icons/ai'
+
+import { AboutContainer, AboutLeftCol, AboutRightCol } from "@/components/About"
+import { Wrapper } from "@/components/Utils"
+import images from '@/constants/images'
 
 
 const About = () => {
 	return (
-		<div>About</div>
+		<Wrapper bgColor="orange02">
+			<AboutContainer>
+				<AboutLeftCol>
+					<h4>About Us</h4>
+					<h2>Grow Your Business With <br /> Our Agency</h2>
+
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis arcu in tincidunt sed imperdiet etiam fames. Tincidunt augue risus mattis eget sem habitant id ultrices augue. Sit rhoncus.</p>
+
+					<div className="service-list">
+						<li><AiFillCheckCircle size={20}/> Innovative website design</li>
+						<li><AiFillCheckCircle size={20}/> UI/UX design with global trends</li>
+						<li><AiFillCheckCircle size={20}/> Web and email hosting service</li>
+					</div>
+				</AboutLeftCol>
+
+				<AboutRightCol>
+					<img src={images.aboutImg} alt="aboutus-img" />
+				</AboutRightCol>
+			</AboutContainer>
+		</Wrapper>
 	)
 }
 
