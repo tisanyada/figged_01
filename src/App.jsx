@@ -1,3 +1,4 @@
+import { Fragment } from 'react'
 import { GlobalStyles } from './theme'
 import { Navigation, Home, Blog, About, CaseStudy, Services, Testimonial, Capabilities, Footer } from '@/container/'
 
@@ -5,7 +6,7 @@ import { Navigation, Home, Blog, About, CaseStudy, Services, Testimonial, Capabi
 function App() {
 
 	return (
-		<>
+		<Fragment>
 			<GlobalStyles />
 
 			<Navigation />
@@ -17,8 +18,7 @@ function App() {
 			<Capabilities />
 			<Blog />
 			<Footer />
-
-		</>
+		</Fragment>
 	)
 }
 

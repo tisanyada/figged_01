@@ -1,36 +1,11 @@
 import { createGlobalStyle } from "styled-components"
 
-// export const theme = {
-//     breakpoints: {
-//         sm: 'screen and (max-width: 480px)',
-//         md: 'screen and (max-width: 769px)',
-//     },
-
-//     _light: {
-//         orange01: '#FF5300',
-//         orange02: '#FFF7F4',
-
-//         black00: '#000000',
-//         black01: '#373737',
-//         black02: '#18191A',
-
-//         dark01: '#242526',
-//         dark02: '#3A3B3C',
-
-//         gray01: '#7B7B7B',
-//     }
-// }
-
 export const breakpoints = {
     sm: 'screen and (max-width: 480px)',
     md: 'screen and (max-width: 769px)',
 }
 
 export const GlobalStyles = createGlobalStyle`
-    /* FONTS */
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
     /* ROOT VARS */
     :root {
         --orange01: #FF5300;

@@ -35,3 +35,40 @@ export const Button = styled(motion.button)`
     cursor: pointer;
     outline: none;
 `
+
+export const SectionHeader1 = styled.h1`
+    font-size: var(--font-desktop-02);
+    color: var(--black01);
+    /* font-weight: 400; */
+`
+
+export const SectionHeader2 = styled.h4`
+    font-size: var(--font-desktop-06);
+    color: var(--orange01);
+    font-weight: 400;
+    position: relative;
+
+
+    &::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 14px;
+        margin-left: -60px;
+        width: 50px;
+        height: 2px;
+        border-radius: 2px;
+        background-color: var(--orange01);
+    } 
+    &::after {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 14px;
+        margin-left: 110px;
+        width: 50px;
+        height: 2px;
+        border-radius: 2px;
+        background-color: var(--orange01);
+    } 
+`
