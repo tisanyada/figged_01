@@ -2,7 +2,6 @@ import { motion } from "framer-motion"
 import styled from "styled-components"
 
 
-
 export const Wrapper = styled.section`
     padding: 1em 6em;
     background-color: ${(props) => props.bgColor ? `var(--${props.bgColor})` : 'white'};
@@ -39,7 +38,6 @@ export const Button = styled(motion.button)`
 export const SectionHeader1 = styled.h1`
     font-size: var(--font-desktop-02);
     color: var(--black01);
-    /* font-weight: 400; */
 `
 
 export const SectionHeader2 = styled.h4`
@@ -48,27 +46,20 @@ export const SectionHeader2 = styled.h4`
     font-weight: 400;
     position: relative;
 
-
+    &::before, &::after {
+        position: absolute;
+        content: "";
+        top: 14px;
+        width: 50px;
+        height: 2px;
+        border-bottom: 1px solid var(--orange01);
+    } 
     &::before {
-        position: absolute;
-        content: "";
-        left: 0;
-        top: 14px;
-        margin-left: -60px;
-        width: 50px;
-        height: 2px;
-        border-radius: 2px;
-        background-color: var(--orange01);
-    } 
+        right: 100%;
+        margin-right: 15px;
+    }
     &::after {
-        position: absolute;
-        content: "";
-        left: 0;
-        top: 14px;
-        margin-left: 110px;
-        width: 50px;
-        height: 2px;
-        border-radius: 2px;
-        background-color: var(--orange01);
-    } 
+        left: 100%;
+        margin-left: 15px;
+    }
 `

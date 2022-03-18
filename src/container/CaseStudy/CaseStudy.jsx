@@ -1,8 +1,120 @@
+import { useState } from "react"
+import { RiShareBoxLine } from 'react-icons/ri'
+
+import { CaseStudyContainer, CaseStudyButtons, CaseStudyItems, CaseStudyItem } from "@/components/CaseStudy"
+import { Button, SectionHeader1, SectionHeader2, Wrapper } from "@/components/Utils"
+import images from "@/constants/images"
 
 
 const CaseStudy = () => {
+	const [activeButton, setActiveButton] = useState('All')
+
 	return (
-		<div>CaseStudy</div>
+		<Wrapper>
+			<CaseStudyContainer>
+				<div className="header">
+					<SectionHeader2>Our Case Study</SectionHeader2>
+					<SectionHeader1>Our Recent Project</SectionHeader1>
+				</div>
+
+				<CaseStudyButtons>
+					{['All', 'UX Design', 'Web Design', 'App Development', 'Game Design', 'Graphic Design'].map((link, index) => (
+						<Button
+							key={index}
+							margin="0 2px"
+							padding="10px 40px"
+							radius="10px"
+							bgColor={`${link === activeButton ? 'orange01' : 'white'}`}
+							color={`${link === activeButton ? 'white' : 'gray01'}`}
+							onClick={() => setActiveButton(link)}
+						>{link}</Button>
+					))}
+				</CaseStudyButtons>
+
+				<CaseStudyItems>
+					<CaseStudyItem>
+						<img src={images.casestudImg1} alt="casestud-1" />
+
+						<div>
+							<RiShareBoxLine size={35}/>
+							<h4>Web Template</h4>
+						</div>
+					</CaseStudyItem>
+					
+					<CaseStudyItem>
+						<img src={images.casestudImg2} alt="casestud-2" />
+						
+						<div>
+							<RiShareBoxLine size={35}/>
+							<h4>Web Template</h4>
+						</div>
+					</CaseStudyItem>
+					
+					<CaseStudyItem>
+						<img src={images.casestudImg3} alt="casestud-3" />
+					
+						<div>
+							<RiShareBoxLine size={35}/>
+							<h4>Web Template</h4>
+						</div>
+					</CaseStudyItem>
+					
+					<CaseStudyItem>
+						<img src={images.casestudImg4} alt="casestud-4" />
+					
+						<div>
+							<RiShareBoxLine size={35}/>
+							<h4>Web Template</h4>
+						</div>
+					</CaseStudyItem>
+
+					<CaseStudyItem>
+						<img src={images.casestudImg5} alt="casestud-5" />
+					
+						<div>
+							<RiShareBoxLine size={35}/>
+							<h4>Web Template</h4>
+						</div>
+					</CaseStudyItem>
+
+					<CaseStudyItem>
+						<img src={images.casestudImg6} alt="casestud-6" />
+					
+						<div>
+							<RiShareBoxLine size={35}/>
+							<h4>Web Template</h4>
+						</div>
+					</CaseStudyItem>
+
+					<CaseStudyItem>
+						<img src={images.casestudImg7} alt="casestud-7" />
+					
+						<div>
+							<RiShareBoxLine size={35}/>
+							<h4>Web Template</h4>
+						</div>
+					</CaseStudyItem>
+
+					<CaseStudyItem>
+						<img src={images.casestudImg8} alt="casestud-8" />
+					
+						<div>
+							<RiShareBoxLine size={35}/>
+							<h4>Web Template</h4>
+						</div>
+					</CaseStudyItem>
+
+					<CaseStudyItem>
+						<img src={images.casestudImg9} alt="casestud-9" />
+					
+						<div>
+							<RiShareBoxLine size={35}/>
+							<h4>Web Template</h4>
+						</div>
+					</CaseStudyItem>
+				</CaseStudyItems>
+			</CaseStudyContainer>
+		</Wrapper>
 	)
 }
 
