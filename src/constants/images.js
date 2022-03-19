@@ -26,7 +26,7 @@ import ctaImg4 from '@/assets/cta-4.png'
 import blogImg1 from '@/assets/blog-1.png'
 import blogImg2 from '@/assets/blog-2.png'
 import blogImg3 from '@/assets/blog-3.png'
-import footerImg from '@/assets/footer.png'
+import footerImg from '@/assets/footer.jpg'
 import quotesImg from '@/assets/quotes.png'
 
 export default {

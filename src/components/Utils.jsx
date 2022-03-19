@@ -11,7 +11,7 @@ export const Logo = styled.h2`
     font-size: 38px;
     font-weight: 600;
     font-family: 'Work Sans', sans-serif;
-    color: var(--black01);
+    color: ${(props) => props.color ? props.color : 'var(--black01)'};
     
     span {
         color: var(--orange01);
