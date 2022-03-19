@@ -1,14 +1,13 @@
-import { ThemeProvider } from "styled-components"
-
-import { theme } from './theme'
-import Navigation from '@/components/Navigation'
-import { Home, Blog, About, CaseStudy, Services, Testimonial, Capabilities, Footer } from '@/container/'
+import { Fragment } from 'react'
+import { GlobalStyles } from './theme'
+import { Navigation, Home, Blog, About, CaseStudy, Newsletter, Services, Testimonial, Capabilities, Footer } from '@/container/'
 
 
 function App() {
 
 	return (
-		<ThemeProvider theme={theme}>
+		<Fragment>
+			<GlobalStyles />
 
 			<Navigation />
 			<Home />
@@ -18,9 +17,9 @@ function App() {
 			<Testimonial />
 			<Capabilities />
 			<Blog />
+			<Newsletter/>
 			<Footer />
-
-		</ThemeProvider>
+		</Fragment>
 	)
 }
 
