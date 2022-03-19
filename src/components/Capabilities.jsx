@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 export const CapabilitiesContainer = styled.div`
-    padding: 4em 0;
+    padding: 4em;
 
     display: flex;
     justify-content: space-between;
@@ -90,6 +90,7 @@ export const CapabilitiesCTA = styled.div`
     color: white;
     width: 100%;
     padding: 4em;
+    margin-bottom: 100px;
     margin-top: 15px;
     border-radius: 10px;
     background-color: var(--orange01);
