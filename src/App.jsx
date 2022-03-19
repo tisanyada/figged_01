@@ -1,6 +1,6 @@
 import { Fragment } from 'react'
 import { GlobalStyles } from './theme'
-import { Navigation, Home, Blog, About, CaseStudy, Services, Testimonial, Capabilities, Footer } from '@/container/'
+import { Navigation, Home, Blog, About, CaseStudy, Newsletter, Services, Testimonial, Capabilities, Footer } from '@/container/'
 
 
 function App() {
@@ -17,6 +17,7 @@ function App() {
 			<Testimonial />
 			<Capabilities />
 			<Blog />
+			<Newsletter/>
 			<Footer />
 		</Fragment>
 	)
