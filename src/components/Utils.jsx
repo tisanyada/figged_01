@@ -20,6 +20,9 @@ export const Wrapper = styled.section`
     @media ${breakpoints.lg} {
         padding: 1em 3.5em;
     }
+    @media ${breakpoints.sm} {
+        padding: 1em;
+    }
 `
 
 export const Logo = styled.a`
