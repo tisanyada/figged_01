@@ -4,7 +4,7 @@ import { HeaderContainer, SectionHeader1, SectionHeader2, Wrapper } from "@/comp
 
 const Newsletter = () => {
 	return (
-		<Wrapper>
+		<Wrapper id="contact">
 			<NewsletterContainer>
 				<NewsletterLeftCol>
 					<h4>Subscribe Newsletter</h4>

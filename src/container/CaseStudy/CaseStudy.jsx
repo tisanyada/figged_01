@@ -10,7 +10,7 @@ const CaseStudy = () => {
 	const [activeButton, setActiveButton] = useState('All')
 
 	return (
-		<Wrapper>
+		<Wrapper id="portfolio">
 			<CaseStudyContainer>
 				<HeaderContainer>
 					<SectionHeader2>Our Case Study</SectionHeader2>

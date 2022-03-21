@@ -1,13 +1,28 @@
 import { motion } from "framer-motion"
 import styled from "styled-components"
-
+import { breakpoints } from "../theme"
 
 export const Wrapper = styled.section`
     padding: 1em 6em;
     background-color: ${(props) => props.bgColor ? `var(--${props.bgColor})` : 'white'};
+    ${(props) => props.navbar && (`
+        position: sticky;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 999;
+    `)}
+    ${(props) => props.sticky && (`
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+        background-color: white;
+    `)};
+
+    @media ${breakpoints.lg} {
+        padding: 1em 3.5em;
+    }
 `
 
-export const Logo = styled.h2`
+export const Logo = styled.a`
     font-size: 38px;
     font-weight: 600;
     font-family: 'Work Sans', sans-serif;
@@ -15,6 +30,10 @@ export const Logo = styled.h2`
     
     span {
         color: var(--orange01);
+    }
+
+    @media ${breakpoints.md} {
+        font-size: 25px;
     }
 `
 

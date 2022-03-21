@@ -7,7 +7,7 @@ import images from '@/constants/images'
 
 const About = () => {
 	return (
-		<Wrapper bgColor="orange02">
+		<Wrapper bgColor="orange02" id="about us">
 			<AboutContainer>
 				<AboutLeftCol>
 					<h4>About Us</h4>

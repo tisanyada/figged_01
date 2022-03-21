@@ -3,6 +3,7 @@ import { createGlobalStyle } from "styled-components"
 export const breakpoints = {
     sm: 'screen and (max-width: 480px)',
     md: 'screen and (max-width: 769px)',
+    lg: 'screen and (max-width: 1100px)',
 }
 
 export const GlobalStyles = createGlobalStyle`

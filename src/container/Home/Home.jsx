@@ -5,7 +5,7 @@ import images from "@/constants/images"
 
 const Home = () => {
     return (
-        <Wrapper bgColor="orange02">
+        <Wrapper bgColor="orange02" id="home">
             <HomeContainer>
                 <HomeLeftCol>
                     <h1>Choose What Matters To Your Business & Your Customers.</h1>
