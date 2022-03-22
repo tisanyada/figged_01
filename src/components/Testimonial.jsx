@@ -1,8 +1,9 @@
 import styled from "styled-components";
+import { breakpoints } from "../theme";
 
 
 export const TestimonialContainer = styled.div`
-    padding: 4em 0;   
+    padding: 4em 0;
 `
 
 export const TestimonialCarousel = styled.div`
@@ -72,12 +73,24 @@ export const TestimonialCarousel = styled.div`
                         }
                     }
                 }
+
+                /* @media ${breakpoints.md} {
+                    width: 100%;
+                } */
             }
         }
     }
+
+    @media ${breakpoints.md}{
+        padding: 4em 2em;   /* width: 100%; */
+    }
+
+    @media ${breakpoints.sm}{
+        .slick-slider div {
+            margin-right: 0;
+        }
+    }
 `
-
-
 
 export const PrevBtn = styled.button`
     svg {
@@ -88,7 +101,12 @@ export const PrevBtn = styled.button`
         top: -5px;
         left: -30px;
     }
+
+    @media ${breakpoints.md}{
+        left: -4px;
+    }
 `
+
 export const NextBtn = styled.button`
     svg {
         border: none;
@@ -97,5 +115,11 @@ export const NextBtn = styled.button`
         position: absolute;
         top: -5px;
         right: -30px;
+    }
+    @media ${breakpoints.md}{
+        right: 8px;
+    }
+    @media ${breakpoints.sm}{
+        right: -4px;
     }
 `

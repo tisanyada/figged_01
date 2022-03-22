@@ -9,7 +9,7 @@ const Footer = () => {
 	return (
 		<FooterContainer>
 			<FooterCol>
-				<Logo color="white">Digi<span>ency</span></Logo>
+				<Logo color="white"><span>Digi</span>ency</Logo>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor facilisi quis risus egestas ipsum.</p>
 			</FooterCol>
 

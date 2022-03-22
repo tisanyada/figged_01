@@ -9,7 +9,7 @@ import images from "@/constants/images"
 
 const Blog = () => {
 	return (
-		<Wrapper bgColor="orange02">
+	<Wrapper bgColor="orange02" id="blog">
 			<BlogContainer>
 				<HeaderContainer>
 					<SectionHeader2>Our Blog</SectionHeader2>

@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import styled from "styled-components"
+import { breakpoints } from "../theme"
 
 
 export const CapabilitiesContainer = styled.div`
@@ -8,10 +9,19 @@ export const CapabilitiesContainer = styled.div`
     justify-content: space-between;
     align-items: center;
     width: 100%;
+
+    @media ${breakpoints.md} {
+        padding: 1em;
+        flex-direction: column-reverse;
+    }
+    @media ${breakpoints.sm} {
+        padding: 1em;
+        flex-direction: column-reverse;
+    }
 `
 
 export const CapabilitiesLeftCol = styled.div`
-    width: 50%;
+    width: 55%;
 
     h4 {
         color: var(--orange01);
@@ -19,7 +29,7 @@ export const CapabilitiesLeftCol = styled.div`
         font-weight: 400;
         position: relative;
 
-        &::after {
+        /* &::after {
             position: absolute;
             content: "";
             top: 14px;
@@ -28,7 +38,7 @@ export const CapabilitiesLeftCol = styled.div`
             width: 50px;
             height: 2px;
             border-bottom: 1px solid var(--orange01);
-        }
+        } */
     }
     h2 {
         color: var(--black01);
@@ -71,14 +81,47 @@ export const CapabilitiesLeftCol = styled.div`
             }
         }
     }
+
+    @media ${breakpoints.md} {
+        width: 100%;
+        /* h4::after {
+            margin-right: 190px;
+        } */
+
+        h2 {
+            text-align: center;
+            line-height: 1.1;
+            font-size: var(--font-tablet-02);
+        }
+    }
+    @media ${breakpoints.sm} {
+        width: 100%;
+        h4 {
+            text-align: center;
+        }
+
+        h2 {
+            margin: 5px 0;
+            text-align: center;
+            line-height: 1.2;
+            font-size: var(--font-tablet-03);
+        }
+    }
 `
 
 export const CapabilitiesRightCol = styled.div`
-    width: 50%;
+    width: 45%;
 
     img {
         width: 100%;
         height: 100%;
+    }
+
+    @media ${breakpoints.md} {
+        width: 100%;
+    }
+    @media ${breakpoints.sm} {
+        width: 100%;
     }
 `
 
@@ -98,17 +141,39 @@ export const CapabilitiesCTA = styled.div`
     .last-item::after{
         border-right: 0;
     }
+
+    @media ${breakpoints.md} {
+        text-align: center;
+        padding: 2em;
+    }
+    @media ${breakpoints.md} {
+        text-align: center;
+        padding: 1em;
+    }
 `
 export const CapabilitiesCTAItem = styled.div`
     text-align: center;
     position: relative;
 
-    &::after {
+    /* img {
+        width: 60%;
+    } */
+    /* &::after {
         position: absolute;
         content: "";
         top: 0;
         right: -100px;
         height: 100%;
         border-right: 2px solid white;
+    } */
+
+    @media ${breakpoints.md} {
+        margin-bottom: 20px;
+        &::after {
+            right: -20px;
+        }
+    }
+    @media ${breakpoints.sm} {
+        width: 100%;
     }
 `

@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import styled from "styled-components"
+import { breakpoints } from '../theme'
 
 
 export const NewsletterContainer = styled.div`
@@ -12,6 +13,10 @@ export const NewsletterContainer = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media ${breakpoints.md} {
+        flex-direction: column;
+    }
 `
 
 export const NewsletterLeftCol = styled.div`
@@ -23,16 +28,15 @@ export const NewsletterLeftCol = styled.div`
         font-weight: 400;
         position: relative;
 
-        &::after {
+        /* &::after {
             position: absolute;
             content: "";
             top: 14px;
             right: 210px;
-            /* margin-right: -3px; */
             width: 50px;
             height: 2px;
             border-bottom: 1px solid white;
-        }
+        } */
     }
     h2 {
         margin-top: 20px;
@@ -40,6 +44,10 @@ export const NewsletterLeftCol = styled.div`
         font-size: var(--font-desktop-02);
         font-weight: 600;
         line-height: 1.2;
+    }
+
+    @media ${breakpoints.md} {
+        width: 100%;
     }
 `
 
@@ -65,6 +73,29 @@ export const NewsletterRightCol = styled.div`
             top: 4px;
             right: 4px;
             border-radius: 5px;
+        }
+    }
+
+    @media ${breakpoints.md} {
+        width: 100%;
+        margin-top: 20px;
+        div{
+            input {
+                padding: 1.5em 10em 1.5em 2em;
+            }
+            label {
+                padding: 1em .5em;
+            }
+        }
+    }
+    @media ${breakpoints.sm} {
+        div{
+            input {
+                padding: 1.5em 2em 1.5em 2em;
+            }
+            label {
+            display: none;
+            }
         }
     }
 `

@@ -10,12 +10,38 @@ import images from "@/constants/images"
 
 
 const Testimonial = () => {
-	
+
 	const sliderSettings = {
 		infinite: true,
 		speed: 800,
 		slidesToShow: 2,
-		slidesToScroll: 2
+		slidesToScroll: 2,
+		responsive: [
+			{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2,
+					infinite: true,
+				}
+			},
+			{
+				breakpoint: 769,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					initialSlide: 1
+				}
+			},
+			{
+				breakpoint: 420,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					initialSlide: 1
+				}
+			}
+		]
 	}
 
 	return (
@@ -59,7 +85,7 @@ const Testimonial = () => {
 								</div>
 								<img src={images.quotesImg} alt="quotes" />
 							</div>
-						</div>	
+						</div>
 
 						<div>
 							<div className="stars">
@@ -79,8 +105,8 @@ const Testimonial = () => {
 								</div>
 								<img src={images.quotesImg} alt="quotes" />
 							</div>
-						</div>						
-						
+						</div>
+
 						<div>
 							<div className="stars">
 								<MdStar size={25} />
@@ -99,8 +125,8 @@ const Testimonial = () => {
 								</div>
 								<img src={images.quotesImg} alt="quotes" />
 							</div>
-						</div>						
-						
+						</div>
+
 						<div>
 							<div className="stars">
 								<MdStar size={25} />
@@ -119,7 +145,7 @@ const Testimonial = () => {
 								</div>
 								<img src={images.quotesImg} alt="quotes" />
 							</div>
-						</div>						
+						</div>
 					</Slider>
 				</TestimonialCarousel>
 			</TestimonialContainer>

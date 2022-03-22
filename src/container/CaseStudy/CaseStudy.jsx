@@ -10,7 +10,7 @@ const CaseStudy = () => {
 	const [activeButton, setActiveButton] = useState('All')
 
 	return (
-		<Wrapper>
+		<Wrapper id="portfolio">
 			<CaseStudyContainer>
 				<HeaderContainer>
 					<SectionHeader2>Our Case Study</SectionHeader2>
@@ -27,6 +27,7 @@ const CaseStudy = () => {
 							bgColor={`${link === activeButton ? 'orange01' : 'white'}`}
 							color={`${link === activeButton ? 'white' : 'gray01'}`}
 							onClick={() => setActiveButton(link)}
+							className="btn"
 						>{link}</Button>
 					))}
 				</CaseStudyButtons>

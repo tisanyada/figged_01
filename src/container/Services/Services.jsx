@@ -5,7 +5,7 @@ import images from "@/constants/images"
 
 const Services = () => {
 	return (
-		<Wrapper>
+		<Wrapper id="services">
 			<ServicesContainer>
 				<HeaderContainer>
 					<SectionHeader2>Our Services</SectionHeader2>
