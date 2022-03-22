@@ -1,3 +1,4 @@
+import { motion } from "framer-motion"
 import styled from "styled-components"
 import { breakpoints } from "../theme"
 
@@ -28,7 +29,7 @@ export const ServiceItem = styled.div`
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.07);
 
     `
-export const ServiceItemHeader = styled.div`
+export const ServiceItemHeader = styled(motion.div)`
     display: flex;
     justify-content: space-between;
     align-items: center;

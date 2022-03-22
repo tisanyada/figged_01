@@ -16,13 +16,17 @@ const About = () => {
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis arcu in tincidunt sed imperdiet etiam fames. Tincidunt augue risus mattis eget sem habitant id ultrices augue. Sit rhoncus.</p>
 
 					<div className="service-list">
-						<li><AiFillCheckCircle size={20}/> Innovative website design</li>
-						<li><AiFillCheckCircle size={20}/> UI/UX design with global trends</li>
-						<li><AiFillCheckCircle size={20}/> Web and email hosting service</li>
+						<li><AiFillCheckCircle size={20} /> Innovative website design</li>
+						<li><AiFillCheckCircle size={20} /> UI/UX design with global trends</li>
+						<li><AiFillCheckCircle size={20} /> Web and email hosting service</li>
 					</div>
 				</AboutLeftCol>
 
-				<AboutRightCol>
+				<AboutRightCol
+					// whileInView={{ x: [100, 0] }}
+					whileInView={{ y: [80, 1] }}
+					transition={{ duration: .8 }}
+				>
 					<img src={images.aboutImg} alt="aboutus-img" />
 				</AboutRightCol>
 			</AboutContainer>

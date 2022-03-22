@@ -1,3 +1,4 @@
+import { motion } from "framer-motion"
 import styled from "styled-components"
 import { breakpoints } from "../theme"
 
@@ -109,7 +110,7 @@ export const CapabilitiesLeftCol = styled.div`
     }
 `
 
-export const CapabilitiesRightCol = styled.div`
+export const CapabilitiesRightCol = styled(motion.div)`
     width: 45%;
 
     img {
@@ -151,21 +152,9 @@ export const CapabilitiesCTA = styled.div`
         padding: 1em;
     }
 `
-export const CapabilitiesCTAItem = styled.div`
+export const CapabilitiesCTAItem = styled(motion.div)`
     text-align: center;
     position: relative;
-
-    /* img {
-        width: 60%;
-    } */
-    /* &::after {
-        position: absolute;
-        content: "";
-        top: 0;
-        right: -100px;
-        height: 100%;
-        border-right: 2px solid white;
-    } */
 
     @media ${breakpoints.md} {
         margin-bottom: 20px;

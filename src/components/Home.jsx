@@ -1,3 +1,4 @@
+import { motion } from "framer-motion"
 import styled from "styled-components"
 import { breakpoints } from "../theme"
 
@@ -43,7 +44,7 @@ export const HomeLeftCol = styled.div`
         }
     }
     `
-export const HomeRightCol = styled.div`
+export const HomeRightCol = styled(motion.div)`
     width: 50%;
 
     img {

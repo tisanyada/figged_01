@@ -9,7 +9,7 @@ import images from "@/constants/images"
 
 const Blog = () => {
 	return (
-	<Wrapper bgColor="orange02" id="blog">
+		<Wrapper bgColor="orange02" id="blog">
 			<BlogContainer>
 				<HeaderContainer>
 					<SectionHeader2>Our Blog</SectionHeader2>
@@ -17,7 +17,10 @@ const Blog = () => {
 				</HeaderContainer>
 
 				<BlogItems>
-					<BlogItem>
+					<BlogItem
+						whileInView={{ scale: [0.8, 1] }}
+						transition={{ duration: 0.8 }}
+					>
 						<img src={images.blogImg1} alt="blogimg-1" />
 
 						<div className="body">
@@ -50,7 +53,10 @@ const Blog = () => {
 							>Read More</Button>
 						</div>
 					</BlogItem>
-					<BlogItem>
+					<BlogItem
+						whileInView={{ scale: [0.8, 1] }}
+						transition={{ duration: 0.8 }}
+					>
 						<img src={images.blogImg2} alt="blogimg-2" />
 
 						<div className="body">
@@ -83,7 +89,10 @@ const Blog = () => {
 							>Read More</Button>
 						</div>
 					</BlogItem>
-					<BlogItem>
+					<BlogItem
+						whileInView={{ scale: [0.8, 1] }}
+						transition={{ duration: 0.8 }}
+					>
 						<img src={images.blogImg3} alt="blogimg-3" />
 
 						<div className="body">

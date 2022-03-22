@@ -1,3 +1,4 @@
+import { motion } from "framer-motion"
 import styled from "styled-components"
 import { breakpoints } from "../theme"
 
@@ -20,7 +21,7 @@ export const BlogItems = styled.div`
     }
 `
 
-export const BlogItem = styled.div`
+export const BlogItem = styled(motion.div)`
     background-color: white;
     display: flex;
     flex-direction: column;

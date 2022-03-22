@@ -1,3 +1,4 @@
+import { motion } from "framer-motion"
 import styled from "styled-components"
 import { breakpoints } from "../theme"
 
@@ -29,7 +30,7 @@ export const CaseStudyItems = styled.div`
     }
 `
 
-export const CaseStudyItem = styled.div`
+export const CaseStudyItem = styled(motion.div)`
     position: relative;
     
     img {

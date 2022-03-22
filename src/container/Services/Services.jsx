@@ -14,11 +14,15 @@ const Services = () => {
 
 				<ServiceItems>
 					<ServiceItem>
-						<ServiceItemHeader>
+						<ServiceItemHeader
+							// whileInView={{ scale: [0.5, 0.9] }}
+							whileInView={{ y: [-40, 1] }}
+							transition={{ duration: .8 }}
+						>
 							<img src={images.serviceImg1} alt="service-item1" />
 							<h1>01</h1>
 						</ServiceItemHeader>
-						
+
 						<ServiceItemBody>
 							<h4>UX Design</h4>
 							<h6>Mobile App, Website</h6>
@@ -27,7 +31,11 @@ const Services = () => {
 					</ServiceItem>
 
 					<ServiceItem>
-						<ServiceItemHeader>
+						<ServiceItemHeader
+							// whileInView={{ scale: [0.5, 0.9] }}
+							whileInView={{ y: [-40, 1] }}
+							transition={{ duration: .8 }}
+						>
 							<img src={images.serviceImg2} alt="service-item2" />
 							<h1>02</h1>
 						</ServiceItemHeader>
@@ -38,9 +46,13 @@ const Services = () => {
 							<p>Lorem ipsum dolor sit amet, consec tet ur adipiscing elit. Accumsan sed faucibu s faucibus augue. Cras ut.</p>
 						</ServiceItemBody>
 					</ServiceItem>
-					
+
 					<ServiceItem>
-						<ServiceItemHeader>
+						<ServiceItemHeader
+							// whileInView={{ scale: [0.5, 0.9] }}
+							whileInView={{ y: [-40, 1] }}
+							transition={{ duration: .8 }}
+						>
 							<img src={images.serviceImg3} alt="service-item3" />
 							<h1>03</h1>
 						</ServiceItemHeader>
@@ -51,9 +63,13 @@ const Services = () => {
 							<p>Lorem ipsum dolor sit amet, consec tet ur adipiscing elit. Accumsan sed faucibu s faucibus augue. Cras ut.</p>
 						</ServiceItemBody>
 					</ServiceItem>
-					
+
 					<ServiceItem>
-						<ServiceItemHeader>
+						<ServiceItemHeader
+							// whileInView={{ scale: [0.5, 0.9] }}
+							whileInView={{ y: [-40, 1] }}
+							transition={{ duration: .8 }}
+						>
 							<img src={images.serviceImg4} alt="service-item4" />
 							<h1>04</h1>
 						</ServiceItemHeader>
@@ -64,9 +80,13 @@ const Services = () => {
 							<p>Lorem ipsum dolor sit amet, consec tet ur adipiscing elit. Accumsan sed faucibu s faucibus augue. Cras ut.</p>
 						</ServiceItemBody>
 					</ServiceItem>
-					
+
 					<ServiceItem>
-						<ServiceItemHeader>
+						<ServiceItemHeader
+							// whileInView={{ scale: [0.5, 0.9] }}
+							whileInView={{ y: [-40, 1] }}
+							transition={{ duration: .8 }}
+						>
 							<img src={images.serviceImg5} alt="service-item5" />
 							<h1>05</h1>
 						</ServiceItemHeader>
@@ -77,9 +97,13 @@ const Services = () => {
 							<p>Lorem ipsum dolor sit amet, consec tet ur adipiscing elit. Accumsan sed faucibu s faucibus augue. Cras ut.</p>
 						</ServiceItemBody>
 					</ServiceItem>
-					
+
 					<ServiceItem>
-						<ServiceItemHeader>
+						<ServiceItemHeader
+							// whileInView={{ scale: [0.5, 0.9] }}
+							whileInView={{ y: [-40, 1] }}
+							transition={{ duration: .8 }}
+						>
 							<img src={images.serviceImg6} alt="service-item6" />
 							<h1>06</h1>
 						</ServiceItemHeader>
