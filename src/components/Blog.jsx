@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { breakpoints } from "../theme"
 
 
 export const BlogContainer = styled.div`
@@ -10,6 +11,13 @@ export const BlogItems = styled.div`
 	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 	grid-gap: 10px;
     margin-top: 35px;
+
+    @media ${breakpoints.md} {
+        grid-gap: 0;
+    }
+    @media ${breakpoints.sm} {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
 `
 
 export const BlogItem = styled.div`
@@ -52,6 +60,16 @@ export const BlogItem = styled.div`
         p {
             font-size: var(--font-desktop-06);
             color: var(--gray01)
+        }
+    }
+
+    @media ${breakpoints.md} {
+        margin-bottom: 20px;
+    }
+    @media ${breakpoints.sm} {
+        .tags {
+            width: 100%;
+            flex-wrap: wrap;
         }
     }
 `

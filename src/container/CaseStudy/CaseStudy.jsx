@@ -27,6 +27,7 @@ const CaseStudy = () => {
 							bgColor={`${link === activeButton ? 'orange01' : 'white'}`}
 							color={`${link === activeButton ? 'white' : 'gray01'}`}
 							onClick={() => setActiveButton(link)}
+							className="btn"
 						>{link}</Button>
 					))}
 				</CaseStudyButtons>

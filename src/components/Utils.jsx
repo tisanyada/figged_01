@@ -1,5 +1,6 @@
 import { motion } from "framer-motion"
 import styled from "styled-components"
+
 import { breakpoints } from "../theme"
 
 export const Wrapper = styled.section`
@@ -11,6 +12,7 @@ export const Wrapper = styled.section`
         top: 0;
         left: 0;
         z-index: 999;
+        padding: .5em 6em;
     `)}
     ${(props) => props.sticky && (`
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
@@ -19,6 +21,9 @@ export const Wrapper = styled.section`
 
     @media ${breakpoints.lg} {
         padding: 1em 3.5em;
+    }
+    @media ${breakpoints.md} {
+        padding: 1em 2em;
     }
     @media ${breakpoints.sm} {
         padding: 1em;
@@ -55,6 +60,10 @@ export const Button = styled(motion.button)`
     color: ${(props) => props.color ? props.color : 'var(--black01)'};
     cursor: pointer;
     outline: none;
+
+    @media ${breakpoints.sm} {
+        font-weight: 600;
+    }
 `
 
 export const HeaderContainer = styled.div`
@@ -68,6 +77,13 @@ export const SectionHeader1 = styled.h1`
     font-size: var(--font-desktop-02);
     color: var(--black01);
     font-weight: ${(props) => props.weight ? props.weight : 300};
+
+    @media ${breakpoints.md} {
+        font-size: var(--font-tablet-02);
+    }
+    @media ${breakpoints.md} {
+        text-align: center;
+    }
 `
 
 export const SectionHeader2 = styled.h4`

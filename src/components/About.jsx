@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakpoints } from "../theme";
 
 
 export const AboutContainer = styled.div`
@@ -7,6 +8,10 @@ export const AboutContainer = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media ${breakpoints.sm} {
+        flex-direction: column-reverse;
+    }
 `
 
 export const AboutLeftCol = styled.div`
@@ -60,12 +65,33 @@ export const AboutLeftCol = styled.div`
             color: var(--orange01);
         }
     }
+
+    @media ${breakpoints.sm} {
+        width: 100%;
+        margin-top: 20px;
+        h4 {
+            text-align: center;
+            &::after {
+                display: none;
+            }
+        }
+        h2 {
+            text-align: center;
+            font-size: var(--font-tablet-02);
+            line-height: 1;
+            margin: 10px 0;
+        }
+ }
 `
 
 export const AboutRightCol = styled.div`
     width: 55%;
     
     img {
+        width: 100%;
+    }
+
+    @media ${breakpoints.sm} {
         width: 100%;
     }
 `

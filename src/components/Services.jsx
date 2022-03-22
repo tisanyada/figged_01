@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import styled from "styled-components"
+import { breakpoints } from "../theme"
 
 
 
@@ -10,6 +11,10 @@ export const ServiceItems = styled.div`
 	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 	grid-gap: 10px;
     margin-top: 35px;
+
+    @media ${breakpoints.sm} {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
 `
 
 export const ServiceItem = styled.div`

@@ -37,6 +37,7 @@ export const HomeLeftCol = styled.div`
     }
     @media ${breakpoints.sm} {
         width: 100%;
+        text-align: center;
         h1 {
             font-size:  var(--font-mobile-01);
         }
@@ -49,7 +50,7 @@ export const HomeRightCol = styled.div`
         width: 100%;
     }
 
-    @media ${breakpoints.sm} {
+   @media ${breakpoints.sm} {
         width: 100%;
         margin-bottom: 20px;
     }

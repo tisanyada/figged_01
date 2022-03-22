@@ -62,4 +62,7 @@ export const GlobalStyles = createGlobalStyle`
     li {
         list-style: none;
     }
+    html {
+        scroll-behavior: smooth;
+    }
 `

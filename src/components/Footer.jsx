@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { breakpoints } from "../theme"
 import { images } from "../constants"
 
 
@@ -9,20 +10,25 @@ export const FooterContainer = styled.div`
     background-image: url(${images.footerImg});
 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+
+    @media ${breakpoints.md} {
+        padding: 3em 2em;
+    }
 `
 
 export const FooterCol = styled.div`
-    width: 25%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-
+    flex-wrap: wrap;
+    
     h4 {
-        font-size: var(--font-desktop-04);
+        font-size: var(--font-desktop-05);
         color: var(--orange01);
         font-weight: 800;
     }
@@ -34,7 +40,7 @@ export const FooterCol = styled.div`
     }
     
     p.content {
-        font-size: var(--font-desktop-05);
+        font-size: var(--font-desktop-06);
         color: white;
         font-weight: 300;
         line-height: 1.5;
@@ -45,14 +51,28 @@ export const FooterCol = styled.div`
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: 30px;
+        flex-wrap: wrap;
+        margin-top: 10px;
         svg {
-            margin: 0 15px 0 0;
+            margin: 0 15px 5px 0;
             background-color: white;
             padding: 10px;
             border-radius: 50%;
             color: var(--black01);
             cursor: pointer;
+        }
+    }
+
+    @media ${breakpoints.md} {
+        width: 100%;
+        margin-bottom: 20px;
+        .socials svg{
+            margin-top: 10px;
+        }
+    }
+    @media ${breakpoints.sm} {
+        .socials svg{
+            margin-top: 10px;
         }
     }
 `
@@ -61,6 +81,7 @@ export const FooterRow = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     border-top: 1px solid white;
     margin-top: 30px;
     width: 100%;
@@ -86,6 +107,13 @@ export const FooterRow = styled.div`
                 border-radius: 50%;
                 background-color: var(--orange01);
             }
+        }
+    }
+
+    @media ${breakpoints.md} {
+        width: 100%;
+        .terms-policy {
+            margin-left: 15px;
         }
     }
 `
