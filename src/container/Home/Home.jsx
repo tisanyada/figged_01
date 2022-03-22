@@ -18,12 +18,16 @@ const Home = () => {
                         color="white"
                         margin="20px 0"
                         fontWeight="500"
-                        whileHover={{ scale: [1, .9],  boxShadow: "0 0 20px #FF5300", }}
+                        whileHover={{ scale: [1, 0.9], boxShadow: "0 0 20px #FF5300", }}
                         transition={{ duration: 0.5, type: 'spring' }}
                     >Get Started Now</Button>
                 </HomeLeftCol>
 
-                <HomeRightCol>
+                <HomeRightCol
+                    whileInView={{ scale: [0.8, 1, 0.9, 1] }}
+                    // whileInView={{ y: [-80, 1] }}
+                    transition={{ duration: 0.8 }}
+                >
                     <img src={images.homeImg} alt="home-img" />
                 </HomeRightCol>
             </HomeContainer>

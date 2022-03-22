@@ -33,83 +33,119 @@ const CaseStudy = () => {
 				</CaseStudyButtons>
 
 				<CaseStudyItems>
-					<CaseStudyItem>
+					<CaseStudyItem
+						// whileInView={{ scale: [0.8, 1] }}
+						whileInView={{ y: [-40, 1] }}
+						transition={{ duration: 0.8 }}
+					>
 						<img src={images.casestudImg1} alt="casestud-1" />
 
 						<div>
-							<RiShareBoxLine size={35}/>
+							<RiShareBoxLine size={35} />
 							<h4>Web Template</h4>
 						</div>
 					</CaseStudyItem>
-					
-					<CaseStudyItem>
+
+					<CaseStudyItem
+						// whileInView={{ scale: [0.8, 1] }}
+						whileInView={{ y: [-40, 1] }}
+						transition={{ duration: 0.8 }}
+					>
 						<img src={images.casestudImg2} alt="casestud-2" />
-						
+
 						<div>
-							<RiShareBoxLine size={35}/>
+							<RiShareBoxLine size={35} />
 							<h4>Web Template</h4>
 						</div>
 					</CaseStudyItem>
-					
-					<CaseStudyItem>
+
+					<CaseStudyItem
+						// whileInView={{ scale: [0.8, 1] }}
+						whileInView={{ y: [-40, 1] }}
+						transition={{ duration: 0.8 }}
+					>
 						<img src={images.casestudImg3} alt="casestud-3" />
-					
+
 						<div>
-							<RiShareBoxLine size={35}/>
+							<RiShareBoxLine size={35} />
 							<h4>Web Template</h4>
 						</div>
 					</CaseStudyItem>
-					
-					<CaseStudyItem>
+
+					<CaseStudyItem
+						// whileInView={{ scale: [0.8, 1] }}
+						whileInView={{ y: [-40, 1] }}
+						transition={{ duration: 0.8 }}
+					>
 						<img src={images.casestudImg4} alt="casestud-4" />
-					
+
 						<div>
-							<RiShareBoxLine size={35}/>
+							<RiShareBoxLine size={35} />
 							<h4>Web Template</h4>
 						</div>
 					</CaseStudyItem>
 
-					<CaseStudyItem>
+					<CaseStudyItem
+						// whileInView={{ scale: [0.8, 1] }}
+						whileInView={{ y: [-40, 1] }}
+						transition={{ duration: 0.8 }}
+					>
 						<img src={images.casestudImg5} alt="casestud-5" />
-					
+
 						<div>
-							<RiShareBoxLine size={35}/>
+							<RiShareBoxLine size={35} />
 							<h4>Web Template</h4>
 						</div>
 					</CaseStudyItem>
 
-					<CaseStudyItem>
+					<CaseStudyItem
+						// whileInView={{ scale: [0.8, 1] }}
+						whileInView={{ y: [-40, 1] }}
+						transition={{ duration: 0.8 }}
+					>
 						<img src={images.casestudImg6} alt="casestud-6" />
-					
+
 						<div>
-							<RiShareBoxLine size={35}/>
+							<RiShareBoxLine size={35} />
 							<h4>Web Template</h4>
 						</div>
 					</CaseStudyItem>
 
-					<CaseStudyItem>
+					<CaseStudyItem
+						// whileInView={{ scale: [0.8, 1] }}
+						whileInView={{ y: [-40, 1] }}
+						transition={{ duration: 0.8 }}
+					>
 						<img src={images.casestudImg7} alt="casestud-7" />
-					
+
 						<div>
-							<RiShareBoxLine size={35}/>
+							<RiShareBoxLine size={35} />
 							<h4>Web Template</h4>
 						</div>
 					</CaseStudyItem>
 
-					<CaseStudyItem>
+					<CaseStudyItem
+						// whileInView={{ scale: [0.8, 1] }}
+						whileInView={{ y: [-40, 1] }}
+						transition={{ duration: 0.8 }}
+					>
 						<img src={images.casestudImg8} alt="casestud-8" />
-					
+
 						<div>
-							<RiShareBoxLine size={35}/>
+							<RiShareBoxLine size={35} />
 							<h4>Web Template</h4>
 						</div>
 					</CaseStudyItem>
 
-					<CaseStudyItem>
+					<CaseStudyItem
+						// whileInView={{ scale: [0.8, 1] }}
+						whileInView={{ y: [-40, 1] }}
+						transition={{ duration: 0.8 }}
+					>
 						<img src={images.casestudImg9} alt="casestud-9" />
-					
+
 						<div>
-							<RiShareBoxLine size={35}/>
+							<RiShareBoxLine size={35} />
 							<h4>Web Template</h4>
 						</div>
 					</CaseStudyItem>
