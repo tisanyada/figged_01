@@ -41,7 +41,7 @@ const Navigation = () => {
                         <IoClose size={24} />
                     </NavCloseButton>
 
-                    {['Home', 'Services', 'About Us', 'Portfolio', 'Blog'].map((link, index) => (
+                    {['Home', 'Services', 'About Us', 'Portfolio', 'Capabilities', 'Blog'].map((link, index) => (
                         <NavLink key={index}
                             href={`#${link.toLowerCase()}`}
                             className={`${activeLink === link ? 'active' : ''}`}

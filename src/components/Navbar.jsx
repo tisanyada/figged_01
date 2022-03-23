@@ -47,7 +47,7 @@ export const NavLink = styled.a`
 
     @media ${breakpoints.lg} {
         margin-right: 0;
-        margin-bottom: 20px;
+        margin-bottom: 35px;
     }
 `
 export const NavCloseButton = styled(motion.button)`
@@ -63,7 +63,7 @@ export const NavCloseButton = styled(motion.button)`
 
     @media ${breakpoints.lg} {
         display: block;
-        margin: 10px 0 20px 145px;
+        margin: 10px 0 40px 145px;
     }
 `
 export const NavMenuButton = styled(motion.button)`

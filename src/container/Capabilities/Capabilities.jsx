@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 
 const Capabilities = () => {
 	return (
-		<Wrapper>
+		<Wrapper id="capabilities">
 			<CapabilitiesContainer>
 				<CapabilitiesLeftCol>
 					<h4>Our Capabilities</h4>

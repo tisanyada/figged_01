@@ -50,7 +50,7 @@ export const AboutLeftCol = styled.div`
         font-weight: 300;
     }
     
-    .service-list li{
+    .service-list li.list-item{
         margin-top: 10px;
         color: var(--gray01);
         font-size: var(--font-desktop-06);
