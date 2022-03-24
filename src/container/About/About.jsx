@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import { AiFillCheckCircle } from 'react-icons/ai'
 
 import { AboutContainer, AboutLeftCol, AboutRightCol } from "@/components/About"
@@ -16,9 +17,24 @@ const About = () => {
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis arcu in tincidunt sed imperdiet etiam fames. Tincidunt augue risus mattis eget sem habitant id ultrices augue. Sit rhoncus.</p>
 
 					<div className="service-list">
-						<li><AiFillCheckCircle size={20} /> Innovative website design</li>
-						<li><AiFillCheckCircle size={20} /> UI/UX design with global trends</li>
-						<li><AiFillCheckCircle size={20} /> Web and email hosting service</li>
+						<motion.li
+							className='list-item'
+							initial={{ y: 60, opacity: 0 }}
+							whileInView={{ y: 1, opacity: 1 }}
+							transition={{ duration: 0.8, delay: 0.5 }}
+						><AiFillCheckCircle size={20} /> Innovative website design</motion.li>
+						<motion.li
+							className='list-item'
+							initial={{ y: 60, opacity: 0 }}
+							whileInView={{ y: 1, opacity: 1 }}
+							transition={{ duration: 0.8, delay: 0.5 }}
+						><AiFillCheckCircle size={20} /> UI/UX design with global trends</motion.li>
+						<motion.li
+							className='list-item'
+							initial={{ y: 60, opacity: 0 }}
+							whileInView={{ y: 1, opacity: 1 }}
+							transition={{ duration: 0.8, delay: 0.5 }}
+						><AiFillCheckCircle size={20} /> Web and email hosting service</motion.li>
 					</div>
 				</AboutLeftCol>
 

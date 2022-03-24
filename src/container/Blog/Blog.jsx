@@ -19,7 +19,7 @@ const Blog = () => {
 				<BlogItems>
 					<BlogItem
 						whileInView={{ scale: [0.8, 1] }}
-						transition={{ duration: 0.8 }}
+						transition={{ duration: 0.5 }}
 					>
 						<img src={images.blogImg1} alt="blogimg-1" />
 
@@ -55,7 +55,7 @@ const Blog = () => {
 					</BlogItem>
 					<BlogItem
 						whileInView={{ scale: [0.8, 1] }}
-						transition={{ duration: 0.8 }}
+						transition={{ duration: 0.5 }}
 					>
 						<img src={images.blogImg2} alt="blogimg-2" />
 
@@ -91,7 +91,7 @@ const Blog = () => {
 					</BlogItem>
 					<BlogItem
 						whileInView={{ scale: [0.8, 1] }}
-						transition={{ duration: 0.8 }}
+						transition={{ duration: 0.5 }}
 					>
 						<img src={images.blogImg3} alt="blogimg-3" />
 

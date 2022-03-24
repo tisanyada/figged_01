@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import { breakpoints } from "../theme"
 import { images } from "../constants"
+import { motion } from "framer-motion"
 
 
 export const FooterContainer = styled.div`
@@ -19,7 +20,7 @@ export const FooterContainer = styled.div`
     }
 `
 
-export const FooterCol = styled.div`
+export const FooterCol = styled(motion.div)`
     width: 30%;
     display: flex;
     flex-direction: column;

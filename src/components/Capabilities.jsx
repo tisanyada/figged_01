@@ -61,12 +61,13 @@ export const CapabilitiesLeftCol = styled.div`
 
         .capability {
             width: 120px;
+            height: 90px;
             padding: .5em;
             margin-top: 10px;
             margin-right: 2px;
             border-radius: 5px;
             text-align: center;
-            box-shadow: rgba(100, 100, 111, 0.1) 0px 0px 20px 0px;
+            box-shadow: rgba(100, 100, 111, 0.1) 0px 0px 5px 2px;
             
             &:last-child{
                 margin-right: 0;
